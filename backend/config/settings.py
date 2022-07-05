@@ -10,8 +10,8 @@ SECRET_KEY = os.getenv("SECRET_KEY", "rw+t6fn87n-r+9%$s^r8hvja2yux(rz#!8th3_1^e2
 
 TESTING = len(sys.argv) > 1 and sys.argv[1] == "test"
 
-DEBUG = os.getenv("DEBUG", "True") == "True" and not TESTING
-
+# DEBUG = os.getenv("DEBUG", "True") == "True" and not TESTING
+DEBUG = True
 ALLOWED_HOSTS = ["*"]
 
 # Application definition
@@ -24,9 +24,10 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "django.contrib.sites",
     "django.forms",
-    # third party
     "rest_framework",
+    'django_filters',
     "drf_spectacular",
+    "calculator",
     # apps
     # "images.apps.ImagesConfig",
 ]
@@ -48,9 +49,11 @@ if DEBUG:
 
 ROOT_URLCONF = "config.urls"
 
+TEMPLATE_DIR = os.path.join(BASE_DIR, "templates")
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
+        'DIRS': [TEMPLATE_DIR],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -69,16 +72,23 @@ WSGI_APPLICATION = "config.wsgi.application"
 
 # Database
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "postgres",
-        "USER": "postgres",
-        "PASSWORD": os.getenv("POSTGRES_PASSWORD"),
-        "HOST": "db",
-        "PORT": 5432,
-        "CONN_MAX_AGE": 600,
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'db.sqlite3',
     }
 }
+
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.postgresql",
+#         "NAME": "postgres",
+#         "USER": "postgres",
+#         "PASSWORD": os.getenv("POSTGRES_PASSWORD"),
+#         "HOST": "db",
+#         "PORT": 5432,
+#         "CONN_MAX_AGE": 600,
+#     }
+# }
 
 # Password validation
 AUTH_PASSWORD_VALIDATORS = [
@@ -98,7 +108,8 @@ USE_L10N = True
 USE_TZ = True
 
 # Static files
-STATIC_URL = "/s/"
+STATIC_URL = "/static/"
+# STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
 STATICFILES_STORAGE = "django.contrib.staticfiles.storage.ManifestStaticFilesStorage"
 
@@ -108,10 +119,11 @@ USE_X_FORWARDED_PORT = True
 SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 
 # Media
-MEDIA_URL = "/m/"
+MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 FILE_UPLOAD_DIRECTORY_PERMISSIONS = 0o755
 FILE_UPLOAD_PERMISSIONS = 0o644
+
 
 # Debug Toolbar
 def show_toolbar_callback(_):
@@ -129,4 +141,13 @@ SITE_ID = 1
 # REST
 REST_FRAMEWORK = {
     "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
+    'DEFAULT_FILTER_BACKENDS': (
+        'django_filters.rest_framework.DjangoFilterBackend',
+    ),
+    # 'DEFAULT_RENDERER_CLASSES': (
+    #     'rest_framework.renderers.JSONRenderer',
+    # ),
+    # 'DEFAULT_PARSER_CLASSES': (
+    #     'rest_framework.parsers.JSONParser',
+    # )
 }

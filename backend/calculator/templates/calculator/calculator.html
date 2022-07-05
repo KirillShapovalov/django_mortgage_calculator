@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Рассчет ипотеки</h1>
+<div class=" calculator">
+    <form method="POST" action="{% url 'calculator' %}">
+        {% csrf_token %}
+
+        {{ form.as_p }}
+
+        <button type="submit" class="btn btn-success">Рассчитать</button>
+        <a class="btn btn-warning" href="{% url 'calculator' %}">Сбросить</a>
+    </form>
+</div>
+<br>
+<br>
+<br>
+<div class="table" style="text-align:center;
+                          width:1000px;
+                          margin-left:auto;
+                          margin-right:auto;">
+    {% if offers %}
+    <table class="table" align="center">
+        <thead>
+        <tr>
+            <th scope="col">Наименование банка</th>
+            <th scope="col">Минимальная процентная ставка</th>
+            <th scope="col">Максимальная процентная ставка</th>
+            <th scope="col">Минимальный ежемесячный платеж</th>
+            <th scope="col">Максимальный ежемесячный платеж</th>
+            <th scope="col">Минимальная переплата</th>
+            <th scope="col">Максимальная переплата</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for offer in offers %}
+        <tr class="table-active">
+            <td>{{ offer.bank }}</td>
+            <td>{{ offer.min_rate }}</td>
+            <td>{{ offer.max_rate }}</td>
+            <td>{{ offer.min_payment }}</td>
+            <td>{{ offer.max_payment }}</td>
+            <td>{{ offer.min_overpayment }}</td>
+            <td>{{ offer.max_overpayment }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+    Тут будут представлены подходящие ипотечные предложения
+    {% endif %}
+</div>
+
+{% endblock %}
