@@ -1,0 +1,36 @@
+version: '3.9'
+
+x-app_environment: &app_environment
+  environment:
+    - DEBUG=True
+    - POSTGRES_USER=postgres
+    - POSTGRES_PASSWORD=postgres
+    - POSTGRES_DB=postgres
+
+
+services:
+  backend:
+    command: "poetry run python src/manage.py runserver 0.0.0.0:8000"
+    build: .
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - "8000:8000"
+    <<: *app_environment
+
+  db:
+    image: postgres:13-alpine
+    volumes:
+      - postgresdata:/var/lib/postgresql/data
+    <<: *app_environment
+
+
+  redis:
+    image: redis:6.0-alpine
+    volumes:
+      - redisdata:/data
+
+volumes:
+  static:
+  redisdata:
+  postgresdata:

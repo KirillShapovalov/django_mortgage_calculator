@@ -26,10 +26,9 @@ INSTALLED_APPS = [
     "django.forms",
     "rest_framework",
     'django_filters',
-    "drf_spectacular",
+    # "drf_spectacular",
+    'drf_yasg',
     "calculator",
-    # apps
-    # "images.apps.ImagesConfig",
 ]
 
 MIDDLEWARE = [
@@ -83,7 +82,7 @@ DATABASES = {
 #         "ENGINE": "django.db.backends.postgresql",
 #         "NAME": "postgres",
 #         "USER": "postgres",
-#         "PASSWORD": os.getenv("POSTGRES_PASSWORD"),
+#         "PASSWORD": "postgres",
 #         "HOST": "db",
 #         "PORT": 5432,
 #         "CONN_MAX_AGE": 600,
@@ -144,10 +143,4 @@ REST_FRAMEWORK = {
     'DEFAULT_FILTER_BACKENDS': (
         'django_filters.rest_framework.DjangoFilterBackend',
     ),
-    # 'DEFAULT_RENDERER_CLASSES': (
-    #     'rest_framework.renderers.JSONRenderer',
-    # ),
-    # 'DEFAULT_PARSER_CLASSES': (
-    #     'rest_framework.parsers.JSONParser',
-    # )
 }

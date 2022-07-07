@@ -1,0 +1,66 @@
+asgiref @ file:///C:/Users/kiril/AppData/Local/pypoetry/Cache/artifacts/cf/65/18/1451154a3ac6f8e749a6f7485ce77472fc1b339d4696f7a4cb816ac781/asgiref-3.5.2-py3-none-any.whl
+asn1crypto @ file:///C:/Users/kiril/AppData/Local/pypoetry/Cache/artifacts/fc/ef/d4/25ffa3720e7d845578ca2cfafa66a57039ac21cd201d4b3dca8b33dde8/asn1crypto-1.5.1-py2.py3-none-any.whl
+attrs @ file:///C:/Users/kiril/AppData/Local/pypoetry/Cache/artifacts/5b/25/94/5d165cd3190cb7dfdc98de86c28e8131fc6e19d83a504412664abffec0/attrs-21.4.0-py2.py3-none-any.whl
+CacheControl==0.12.11
+cachy==0.3.0
+certifi @ file:///C:/Users/kiril/AppData/Local/pypoetry/Cache/artifacts/b0/0d/df/4aa04d9b421fc5f1438b55d4b37516d21ef0ba40158bf7f9dfb28122ca/certifi-2022.6.15-py3-none-any.whl
+cffi @ file:///C:/Users/kiril/AppData/Local/pypoetry/Cache/artifacts/14/9e/7d/aa805035b3704faddc7fc9ec7ebe9d9848f78e7ca1b4f1a7039c42767e/cffi-1.15.1-cp39-cp39-win_amd64.whl
+chardet @ file:///C:/Users/kiril/AppData/Local/pypoetry/Cache/artifacts/8f/6f/1c/8085d730ad63c462222af30d0d01c4bd0caca5287e40b63c1fe8f529b7/chardet-3.0.4-py2.py3-none-any.whl
+charset-normalizer==2.0.12
+cleo==0.8.1
+clikit==0.6.2
+coreapi @ file:///C:/Users/kiril/AppData/Local/pypoetry/Cache/artifacts/a1/d2/42/9daa39a9a9b2daf74f734f46589930a09bad232e4aff2d1813be140030/coreapi-2.3.3-py2.py3-none-any.whl
+coreschema @ file:///C:/Users/kiril/AppData/Local/pypoetry/Cache/artifacts/2b/b3/80/cfb6d6f90067a445f8c35c6ceb512abd82fe36cad196e787db866129e0/coreschema-0.0.4.tar.gz
+coverage @ file:///C:/Users/kiril/AppData/Local/pypoetry/Cache/artifacts/67/cd/d5/78a090bd35557e98d681e8ef2182dd8afa56b9f5920ce699b046d5de4a/coverage-5.1-cp39-cp39-win_amd64.whl
+crashtest==0.3.1
+cryptography==37.0.2
+distlib==0.3.4
+Django @ file:///C:/Users/kiril/AppData/Local/pypoetry/Cache/artifacts/6f/40/f1/62d75bafb17d2bc4508112959ef51cf0ef0890b9b83452c02237692e99/Django-3.1.6-py3-none-any.whl
+django-debug-toolbar @ file:///C:/Users/kiril/AppData/Local/pypoetry/Cache/artifacts/b2/5e/17/209b765e139365d7e974a05f9ef3e1b1208502f2b05acb1c2f520c4e2f/django_debug_toolbar-2.2-py3-none-any.whl
+django-filter @ file:///C:/Users/kiril/AppData/Local/pypoetry/Cache/artifacts/a9/c6/98/7cc5361bf7dd56b5125c00f61aaf4c4a2c94e438288814f48d6cc4fe3b/django_filter-21.1-py3-none-any.whl
+djangorestframework @ file:///C:/Users/kiril/AppData/Local/pypoetry/Cache/artifacts/c5/50/20/f26354926de2fa4467b34d00d5de474c3573aa58caed6fdb78a5043261/djangorestframework-3.12.0-py3-none-any.whl
+drf-spectacular @ file:///C:/Users/kiril/AppData/Local/pypoetry/Cache/artifacts/fb/ca/da/42399cc6f35d24c90170b507f8ea37b41cbe36e8f108cb32382412d0fe/drf_spectacular-0.13.2-py2.py3-none-any.whl
+factory-boy @ file:///C:/Users/kiril/AppData/Local/pypoetry/Cache/artifacts/2d/a3/37/104c2a1cb9d368ca3c3373852255beb758bb2e3fd41b0a76ed658564d2/factory_boy-2.12.0-py2.py3-none-any.whl
+Faker @ file:///C:/Users/kiril/AppData/Local/pypoetry/Cache/artifacts/65/2d/29/9c34bf7d79c4ae1d9d59c5d07656cb4b56b0152098fce62c4d63e091c3/Faker-13.14.0-py3-none-any.whl
+filelock==3.7.1
+html5lib==1.1
+idna @ file:///C:/Users/kiril/AppData/Local/pypoetry/Cache/artifacts/ef/7f/a9/19cc0b8760bdf6f696290c06532496f8bb29fbdaad044f852fed00ec82/idna-2.10-py2.py3-none-any.whl
+importlib-metadata==4.12.0
+inflection @ file:///C:/Users/kiril/AppData/Local/pypoetry/Cache/artifacts/2f/ed/82/68adaa9865195edc03da6786b66cc708b169265e333e239c28b11e9a4d/inflection-0.5.1-py2.py3-none-any.whl
+itypes @ file:///C:/Users/kiril/AppData/Local/pypoetry/Cache/artifacts/ad/65/69/17a3a1ab828578556a7d79b3dbe47228126257b8630b5306752f7ace76/itypes-1.2.0-py2.py3-none-any.whl
+Jinja2==3.1.2
+jsonschema @ file:///C:/Users/kiril/AppData/Local/pypoetry/Cache/artifacts/ba/13/6b/5b59bb991c3803bc880cb04d79d8b40f2c0d04e4c779b13fb7f78186fd/jsonschema-4.6.1-py3-none-any.whl
+keyring==23.6.0
+lockfile==0.12.2
+MarkupSafe @ file:///C:/Users/kiril/AppData/Local/pypoetry/Cache/artifacts/0d/39/c5/934bea1d1da42f89497a3cf6083991ea9da3f6c323d19dbb31655ae920/MarkupSafe-2.1.1-cp39-cp39-win_amd64.whl
+msgpack==1.0.4
+packaging==20.9
+pastel==0.2.1
+pexpect==4.8.0
+Pillow==9.1.1
+pkginfo==1.8.3
+platformdirs==2.5.2
+poetry==1.1.13
+poetry-core==1.0.8
+psycopg2 @ file:///C:/Users/kiril/AppData/Local/pypoetry/Cache/artifacts/e9/83/9d/480a7e9ef78ea4bcba536e0f7ae1b131f0fc7542ab1fb46ab5f33b5422/psycopg2-2.8.6-cp39-cp39-win_amd64.whl
+ptyprocess==0.7.0
+pycparser @ file:///C:/Users/kiril/AppData/Local/pypoetry/Cache/artifacts/fb/06/dd/b5671b47dd0597663bc05d60d324bb315a8cef56f3179b8f9067f88e50/pycparser-2.21-py2.py3-none-any.whl
+pylev==1.4.0
+pyparsing==3.0.9
+pyrsistent @ file:///C:/Users/kiril/AppData/Local/pypoetry/Cache/artifacts/a8/a0/90/feff5541a3ee6cc5dd96709e418499d1f6fe2f51327ae5580e54cbc1c3/pyrsistent-0.18.1-cp39-cp39-win_amd64.whl
+python-dateutil @ file:///C:/Users/kiril/AppData/Local/pypoetry/Cache/artifacts/53/f8/2a/7d63ce15df7386e9536e83413453f8aa845b47fb425f05c4ca2fb231c3/python_dateutil-2.8.2-py2.py3-none-any.whl
+pytz @ file:///C:/Users/kiril/AppData/Local/pypoetry/Cache/artifacts/fb/60/46/e704d81037c87ab74c6677ae79ab43dda85c31e3ae38f53c44486b593a/pytz-2022.1-py2.py3-none-any.whl
+pywin32-ctypes==0.2.0
+PyYAML @ file:///C:/Users/kiril/AppData/Local/pypoetry/Cache/artifacts/b9/e9/82/65a26ab81c9c52760322f10f23af03c060ce99f121aaa0422853fcef38/PyYAML-6.0-cp39-cp39-win_amd64.whl
+requests @ file:///C:/Users/kiril/AppData/Local/pypoetry/Cache/artifacts/26/cd/9d/82b79a623957a8270a1da210785b91846fb85388cb9139e96b2b6dbf96/requests-2.23.0-py2.py3-none-any.whl
+requests-toolbelt==0.9.1
+shellingham==1.4.0
+six==1.16.0
+sqlparse==0.4.2
+tomlkit==0.11.0
+tzdata==2022.1
+uritemplate @ file:///C:/Users/kiril/AppData/Local/pypoetry/Cache/artifacts/1a/e2/cb/249c8899e583da59e638cdc64c159f34786ab2c1c72e980c6c12d824fd/uritemplate-4.1.1-py2.py3-none-any.whl
+urllib3 @ file:///C:/Users/kiril/AppData/Local/pypoetry/Cache/artifacts/d8/4b/3f/9e8027e7f15b2f99244ad505328c3cf87912ad87446c1c8e89efacf731/urllib3-1.25.11-py2.py3-none-any.whl
+virtualenv==20.15.0
+webencodings==0.5.1
+zipp==3.8.0

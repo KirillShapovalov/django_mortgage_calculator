@@ -4,6 +4,7 @@ from django.contrib import admin
 from django.urls import include, path
 from drf_spectacular.views import SpectacularSwaggerView, SpectacularAPIView
 from calculator.routers import router
+from .yasg import urlpatterns as doc_urls
 
 urlpatterns = [
     path("admin/", admin.site.urls),
@@ -15,6 +16,7 @@ urlpatterns = [
 
 # urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS)
+urlpatterns += doc_urls
 
 if settings.DEBUG:
     import debug_toolbar
